@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/main.css";
 import "../../assets/util.css";
-const Side = require("../../assets/bg-01.jpg");
 
 export interface Props {
   setEmail: any;

@@ -1,6 +1,4 @@
-import { count } from "console";
-import { stat } from "fs";
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useReducer } from "react";
 import { useNavigate } from "react-router-dom";
 
 const initialState = { count: 0, quantity: 0 };
@@ -66,7 +64,7 @@ export default function Home() {
     if (!authToken) {
       navigate("/login");
     }
-  }, []);
+  }, [navigate]);
 
   return (
     <>

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Login from "./components/login/login";
 import { app } from "./components/firebase-config";
-import { message, Space } from "antd";
+import { message } from "antd";
 // import "antd/dist/reset.css"
 import {
   getAuth,
@@ -17,7 +16,7 @@ function App() {
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [messageApi, contextHolder] = message.useMessage();
+  const [messageApi] = message.useMessage();
 
   const handleAction = (id: any, e: any) => {
     e.preventDefault();

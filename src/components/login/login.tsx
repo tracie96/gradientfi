@@ -3,8 +3,6 @@ import "../../assets/main.css"
 import "../../assets/util.css"
 import { Link } from "react-router-dom";
 
-const Side = require("../../assets/bg-01.jpg");
-
 export interface Props {
     setEmail: any;
     setPassword:any;
